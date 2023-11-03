@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Validation</title>
+</head>
+<body>
+    <form id="emailForm">
+        <label for="email">Enter your email address:</label>
+        <input type="text" id="email" name="email">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent the form from submitting
+
+            // Get the email input field value
+            const emailInput = document.getElementById('email');
+            const email = emailInput.value;
+
+            // Regular expression to validate email
+            const emailPattern = /^[a-zA-Z0-9._-]+@explorin\.io$/;
+
+            if (email === '') {
+                alert('Please enter your email address.');
+            } else if (!emailPattern.test(email)) {
+                alert('Please enter a valid email address with the domain "explorin.io".');
+            } else {
+                 console.log("Looks Good");
+                 console.log("validation completed");
+                alert('Email is valid and meets the criteria: ' + email);
+                // You can submit the form or take other actions here
+            }
+        });
+    </script>
+</body>
+</html>

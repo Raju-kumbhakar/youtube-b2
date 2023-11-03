@@ -1,0 +1,157 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="assign3a.css" rel="stylesheet"> -->
+    <style>
+        .wrapper{
+   display: flex;
+   height: 300px;
+   width: 600px;
+   border: 3px solid darkgreen;
+   background-color: rgb(43, 180, 43);
+   flex-direction: column;
+
+}
+#row1{
+    flex: 1;
+    display: flex;
+    margin: 6px 6px 3px 6px;
+    border: 3px solid darkblue;
+    background-color: rgb(49, 49, 192);
+}
+#row2{
+    flex: 2;
+    margin: 3px 6px 3px 6px;
+    display: flex;
+}
+#row3{
+    flex: 1;
+    display: flex;
+    margin: 3px 6px 6px 6px;
+    border: 3px solid darkblue;
+    background-color: rgb(50, 50, 172);
+}
+#col1{
+    flex: 1;
+    border: 3px solid rgb(99, 2, 2);
+    background-color: rgb(223, 61, 88);
+}
+#col2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 3px;
+}
+#subrow1{
+    flex: 1;
+    margin: 0px 0px 3px 0px;
+    border: 3px solid rgb(99, 2, 2);
+    background-color: rgb(223, 61, 88);
+
+}
+#subrow2{
+    flex: 1;
+    border: 3px solid rgb(99, 2, 2);
+    background-color: rgb(223, 61, 88);
+}
+#subcol1{
+    flex: 1;
+    margin: 6px;
+    border: 3px solid orangered;
+    background-color:rgb(221, 166, 48) ;
+
+}
+#subcol2{
+    flex: 1;
+    margin: 6px 3px;
+    display: flex;
+    border: 3px solid orangered;
+    background-color: rgb(221, 166, 48);
+
+}
+#subcol3{
+    flex: 1;
+    margin: 6px;
+    border: 3px solid orangered;
+    background-color: rgb(221, 166, 48);
+
+}
+#subcol4{
+    flex: 1;
+    margin: 6px;
+    border: 3px solid darkblue;
+    background-color: rgb(75, 75, 160);
+
+}
+#subcol5{
+    flex: 1;
+    display: flex;
+    margin: 6px 3px;
+
+}
+#subcol6{
+    flex: 1;
+    margin: 6px;
+    border: 3px solid darkblue;
+    background-color: rgb(92, 92, 177);
+
+}
+#subcol7{
+    flex: 1;
+    margin: 0px 3px 0px 0px;
+    border: 3px solid orangered;
+    background-color: rgb(221, 166, 48);
+
+}
+#subcol8{
+    flex: 1;
+    border: 3px solid orangered;
+    background-color: rgb(221, 166, 48);
+
+}
+#subcol9{
+    flex: 1;
+    margin: 3px 0px 3px 3px;
+    border: 3px solid red;
+    background-color: rgb(202, 46, 72);
+
+}
+#subcol10{
+    flex: 1;
+    margin: 3px 3px 3px 0px;
+    border: 3px solid red;
+    background-color: rgb(202, 46, 72);
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div id="row1">
+            <div id="subcol1"></div>
+            <div id="subcol2">
+                <div id="subcol9"></div>
+                <div id="subcol10"></div>
+            </div>
+            <div id="subcol3"></div>
+        </div>
+        <div id="row2">
+            <div id="col1"></div>
+            <div id="col2">
+                <div id="subrow1"></div>
+                <div id="subrow2"></div>
+            </div>
+        </div>
+        <div id="row3">
+            <div id="subcol4"></div>
+            <div id="subcol5">
+                <div id="subcol7"></div>
+                <div id="subcol8"></div>
+            </div>
+            <div id="subcol6"></div>
+        </div>
+    </div>
+
+</body></html>

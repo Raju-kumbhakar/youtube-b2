@@ -1,0 +1,34 @@
+/* Add some basic CSS to style the grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item {
+    border: 1px solid #000;
+    text-align: center;
+    background-color: rgb(213, 206, 206);
+}
+
+.grid-item1 {
+    border: 1px solid #000;
+    text-align: center;
+    background-color: rgb(244, 84, 26);
+    color: white;
+
+}
+
+.heading {
+    grid-column: span 4; /* Make the heading span all 4 columns */
+}
+
+.header {
+    text-align: center;
+}
+
+.custom-button {
+background-color: orangered;
+color: white;
+display: flex; 
+align-content: center;
+}
